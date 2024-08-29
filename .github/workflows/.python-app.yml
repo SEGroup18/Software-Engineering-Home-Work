@@ -17,7 +17,7 @@ jobs:
     - name: Getting your python up and ready
       uses: actions/setup-python@v4
       with:
-        python-version: 3.13
+        python-version: 3.12
 
     - name: Setting up dependencies for code auto test
       run: |
