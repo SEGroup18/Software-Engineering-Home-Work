@@ -1,7 +1,7 @@
 def compute_perimeter(radius):
     #perimeter formulae = 2 * π * radius
     perimeter = 2 * 3.14 * radius
-    return perimeter
+    return round(perimeter, 2)
 
 def print_info_of_circle(radius):
     perimeter = compute_perimeter(radius)
