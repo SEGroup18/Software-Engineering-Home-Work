@@ -1,4 +1,4 @@
-import rand
+import HW2.rand as rand
 
 def mergeSort(arr):
     if (len(arr) == 1):
