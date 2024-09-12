@@ -14,12 +14,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install autopep8 pylint flake8 pytest
+        pip install autopep8 pyflakes pytest
+        npm install -g pyright
     - name: Run autopep8
       run: autopep8 --in-place --aggressive --aggressive *.py
-    - name: Run pylint
-      run: pylint *.py
-    - name: Run flake8
-      run: flake8 *.py
+    - name: Run pyflakes
+      run: pyflakes *.py
+    - name: Run pyright
+      run: pyright
     - name: Run tests
       run: pytest test_merge_sort.py

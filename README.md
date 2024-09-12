@@ -7,11 +7,10 @@
 
 # Status Badges
 
-![CI](https://img.shields.io/github/workflow/status/YOUR_USERNAME/YOUR_REPO/CI)
-![autopep8](https://img.shields.io/badge/autopep8-passing-brightgreen)
-![pyflakes](https://img.shields.io/badge/pyflakes-passing-brightgreen)
-![pylint](https://img.shields.io/badge/pylint-passing-brightgreen)
-![pyright](https://img.shields.io/badge/pyright-passing-brightgreen)
+![CI](https://github.com/<your-username>/<your-repo-name>/workflows/CI/badge.svg)
+[![autopep8](https://img.shields.io/badge/code%20style-autopep8-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/<your-username>/<your-repo-name>/actions)
+[![pyflakes](https://img.shields.io/badge/linter-pyflakes-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/<your-username>/<your-repo-name>/actions)
+[![pyright](https://img.shields.io/badge/types-pyright-blue?style=flat-square&logo=python&logoColor=white)](https://github.com/<your-username>/<your-repo-name>/actions)
 
 
 # Software-Engineering-Home-Work
