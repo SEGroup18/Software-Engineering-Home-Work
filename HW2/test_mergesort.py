@@ -1,6 +1,3 @@
-# test_merge_sort.py
-
-from rand import random_array
 from hw2_debugging import mergeSort
 
 def test_already_sorted_array():
