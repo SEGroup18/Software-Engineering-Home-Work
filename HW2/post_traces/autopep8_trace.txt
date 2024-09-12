@@ -1,0 +1,18 @@
+--- original/hw2_debugging.py
++++ fixed/hw2_debugging.py
+@@ -9,6 +9,7 @@
+     leftArr = mergeSort(arr[:half])
+     rightArr = mergeSort(arr[half:])
+     return recombine(leftArr, rightArr)
++
+ 
+ def recombine(leftArr, rightArr):
+     leftIndex = 0
+@@ -36,6 +37,7 @@
+ 
+     return mergeArr
+ 
++
+ arr = rand.random_array([None] * 20)
+ arr_out = mergeSort(arr)
+ 

@@ -2,34 +2,39 @@ import rand
 
 
 def mergeSort(arr):
-    if (len(arr) == 1):
+    if len(arr) <= 1:
         return arr
 
     half = len(arr) // 2
-
-    return recombine(mergeSort(arr[:half]), mergeSort(arr[half:]))
-
+    leftArr = mergeSort(arr[:half])
+    rightArr = mergeSort(arr[half:])
+    return recombine(leftArr, rightArr)
 
 def recombine(leftArr, rightArr):
     leftIndex = 0
     rightIndex = 0
-    mergeArr = [None] * (len(leftArr) + len(rightArr))
+    mergeArr = []
+
+    # Merge arrays while both have elements
     while leftIndex < len(leftArr) and rightIndex < len(rightArr):
         if leftArr[leftIndex] < rightArr[rightIndex]:
-            rightIndex += 1
-            mergeArr[leftIndex + rightIndex] = leftArr[leftIndex]
-        else:
+            mergeArr.append(leftArr[leftIndex])
             leftIndex += 1
-            mergeArr[leftIndex + rightIndex] = rightArr[rightIndex]
+        else:
+            mergeArr.append(rightArr[rightIndex])
+            rightIndex += 1
 
-    for i in range(rightIndex, len(rightArr)):
-        mergeArr[leftIndex + rightIndex] = rightArr[i]
+    # Append remaining elements from leftArr
+    while leftIndex < len(leftArr):
+        mergeArr.append(leftArr[leftIndex])
+        leftIndex += 1
 
-    for i in range(leftIndex, len(leftArr)):
-        mergeArr[leftIndex + rightIndex] = leftArr[i]
+    # Append remaining elements from rightArr
+    while rightIndex < len(rightArr):
+        mergeArr.append(rightArr[rightIndex])
+        rightIndex += 1
 
     return mergeArr
-
 
 arr = rand.random_array([None] * 20)
 arr_out = mergeSort(arr)
