@@ -7,9 +7,9 @@
 
 # Status Badges
 
-[![autopep8](https://img.shields.io/badge/code%20style-autopep8-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions)
-[![pyflakes](https://img.shields.io/badge/linter-pyflakes-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions)
-[![pyright](https://img.shields.io/badge/types-pyright-blue?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions)
+[![autopep8](https://img.shields.io/badge/code%20style-autopep8-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions/workflows/ci.yml)
+[![pyflakes](https://img.shields.io/badge/linter-pyflakes-brightgreen?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions/workflows/ci.yml)
+[![pyright](https://img.shields.io/badge/types-pyright-blue?style=flat-square&logo=python&logoColor=white)](https://github.com/MarthalaSaiKavya/Software-Engineering-Home-Work/actions/workflows/ci.yml)
 
 
 # Software-Engineering-Home-Work
