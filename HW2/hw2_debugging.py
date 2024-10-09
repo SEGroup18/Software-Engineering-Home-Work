@@ -15,7 +15,7 @@ def recombine(leftArr, rightArr):
     rightIndex = 0
     mergeArr = []
 
-    # Merge arrays while both have elements
+    # Merge arrays while both have elements.
     while leftIndex < len(leftArr) and rightIndex < len(rightArr):
         if leftArr[leftIndex] < rightArr[rightIndex]:
             mergeArr.append(leftArr[leftIndex])
@@ -24,7 +24,7 @@ def recombine(leftArr, rightArr):
             mergeArr.append(rightArr[rightIndex])
             rightIndex += 1
 
-    # Append remaining elements from leftArr
+    # Append remaining elements from leftArr.
     while leftIndex < len(leftArr):
         mergeArr.append(leftArr[leftIndex])
         leftIndex += 1
