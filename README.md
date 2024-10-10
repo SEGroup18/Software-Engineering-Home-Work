@@ -12,9 +12,9 @@
 [![pyright](https://img.shields.io/badge/types-pyright-blue?style=flat-square&logo=python&logoColor=white)](https://github.com/SEGroup18/Software-Engineering-Home-Work/actions/workflows/ci.yml)
 
 # For HW 4
-![Shell](https://img.shields.io/badge/language-Shell-blue)
+[![Shell](https://img.shields.io/badge/language-Shell-blue)](https://www.gnu.org/software/bash/manual/bash.html)
 [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
-![Platform](https://img.shields.io/badge/platform-Linux-brightgreen)
+[![Platform](https://img.shields.io/badge/platform-Linux-brightgreen)](https://www.kernel.org/)
 
 # Software-Engineering-Home-Work
 This is the Homework Repository of SE-NCSU for Group 18
