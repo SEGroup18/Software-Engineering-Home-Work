@@ -12,8 +12,8 @@
 [![pyright](https://img.shields.io/badge/types-pyright-blue?style=flat-square&logo=python&logoColor=white)](https://github.com/SEGroup18/Software-Engineering-Home-Work/actions/workflows/ci.yml)
 
 # For HW 4
-![Python](https://img.shields.io/badge/language-Python-blue)
-![License](https://img.shields.io/badge/license-BSD--2--Clause-blue)
+![Shell](https://img.shields.io/badge/language-Shell-blue)
+[![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
 ![Platform](https://img.shields.io/badge/platform-Linux-brightgreen)
 
 # Software-Engineering-Home-Work
