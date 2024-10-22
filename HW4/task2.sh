@@ -1,9 +1,1 @@
-grep -rl "sample" . | while read file; do
-    # Count occurrences of "CSC510" in the file
-    count=$(grep -o "CSC510" "$file" | wc -l)
-    # If count is at least 3, print count, size, and filename
-    if [ "$count" -ge 3 ]; then
-        size=$(wc -c < "$file")  # Get file size using wc
-        echo "$count $size $file"
-    fi
-done | gawk '{ gsub("file_", "filtered_", $3); print $1, $2, $3 }' | sort -k1,1nr -k2,2n 
+grep -l "sample" dataset1/* | xargs -I{} sh -c 'count=$(grep -o "CSC510" {} | wc -l); [ "$count" -ge 3 ] && echo "{} $count $(stat -f%z {})"' | sort -k2,2nr -k3,3nr | sed 's/file_/filtered_/' | gawk '{print "Occurrences: " $2 " , File size: " $3 " bytes, File path: " $1}'
